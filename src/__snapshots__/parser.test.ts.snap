@@ -1,0 +1,154 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`parser > parse > should parse a valid string input with no children 1`] = `
+[
+  {
+    "children": null,
+    "name": "id",
+  },
+  {
+    "children": null,
+    "name": "name",
+  },
+  {
+    "children": null,
+    "name": "email",
+  },
+  {
+    "children": null,
+    "name": "externalId",
+  },
+]
+`;
+
+exports[`parser > parse > should parse valid string with children 1`] = `
+[
+  {
+    "children": null,
+    "name": "id",
+  },
+  {
+    "children": null,
+    "name": "name",
+  },
+  {
+    "children": null,
+    "name": "email",
+  },
+  {
+    "children": [
+      {
+        "children": null,
+        "name": "id",
+      },
+      {
+        "children": null,
+        "name": "name",
+      },
+    ],
+    "name": "type",
+  },
+  {
+    "children": null,
+    "name": "externalId",
+  },
+]
+`;
+
+exports[`parser > parse > should parse valid string with multiple children 1`] = `
+[
+  {
+    "children": null,
+    "name": "id",
+  },
+  {
+    "children": null,
+    "name": "name",
+  },
+  {
+    "children": null,
+    "name": "email",
+  },
+  {
+    "children": [
+      {
+        "children": null,
+        "name": "c1",
+      },
+      {
+        "children": null,
+        "name": "c2",
+      },
+      {
+        "children": null,
+        "name": "c3",
+      },
+    ],
+    "name": "type",
+  },
+  {
+    "children": [
+      {
+        "children": null,
+        "name": "type",
+      },
+      {
+        "children": null,
+        "name": "value",
+      },
+    ],
+    "name": "externalId",
+  },
+]
+`;
+
+exports[`parser > parse > should parse valid string with nested children 1`] = `
+[
+  {
+    "children": null,
+    "name": "id",
+  },
+  {
+    "children": null,
+    "name": "name",
+  },
+  {
+    "children": null,
+    "name": "email",
+  },
+  {
+    "children": [
+      {
+        "children": null,
+        "name": "id",
+      },
+      {
+        "children": null,
+        "name": "name",
+      },
+      {
+        "children": [
+          {
+            "children": null,
+            "name": "c1",
+          },
+          {
+            "children": null,
+            "name": "c2",
+          },
+          {
+            "children": null,
+            "name": "c3",
+          },
+        ],
+        "name": "customFields",
+      },
+    ],
+    "name": "type",
+  },
+  {
+    "children": null,
+    "name": "externalId",
+  },
+]
+`;

@@ -1,13 +1,8 @@
-const main = () => {
-	const args = process.argv;
-	const expectedNumberOfArguments = 3; // node, script, input arg
-	if (args.length !== expectedNumberOfArguments) {
-		console.error('Usage: npm start "<input string>"');
-		return;
-	}
+import { parse } from './parser.ts';
+import { formatNodes } from './formatter.ts';
 
-	const inputString = args[2];
-	console.log(`Input string: ${inputString}`);
+export const main = (input: string, sorted: boolean) => {
+	const parsedNodes = parse(input);
+	const formatted = formatNodes(parsedNodes, sorted);
+	return formatted;
 };
-
-main();

@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"typeheck": "tsc --noEmit",
-		"start": "tsx src/main.ts",
+		"start": "tsx src/index.ts",
 		"test": "vitest"
 	},
 	"devDependencies": {
